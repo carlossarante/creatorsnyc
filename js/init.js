@@ -240,7 +240,7 @@ function notifyForm(){
 		e.preventDefault();
 
 		if (id == "goto") {
-			window.location.href="http://www.creators.nyc/form"
+			window.location.href="http://www.creators.nyc/apply"
 		}
 		
 		if (!$('#' + id).length) {
