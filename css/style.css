@@ -176,7 +176,7 @@ p.tagline, .address-detail a.tagline {
   right: 0;
   overflow: hidden; }
   .side-right .background-kenburn {
-    background: transparent url("../img/mainbg.jpg");
+    background: transparent url("../img/matt.jpg");
     animation: 10s ease 0s normal none infinite kenburn;
     background-size: cover;
     background-position: center;

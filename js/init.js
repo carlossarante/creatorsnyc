@@ -231,12 +231,17 @@ function notifyForm(){
 			hash   = url.substring(url.indexOf('#')),
 			homeId = 'home';
 	
-  link.on('click', function(e){
+  link.on('click', function(e){ 
+	  try {
 		var $this    = $(this),
 				id       = $this.attr('href').split('#').pop(),
 				duration = 1;
 		
 		e.preventDefault();
+
+		if (id == "goto") {
+			window.location.href="http://www.creators.nyc/form"
+		}
 		
 		if (!$('#' + id).length) {
 			console.log('No such section!');
@@ -294,6 +299,10 @@ function notifyForm(){
 				//document.location.hash = '#' + homeId;
 			});
 		}
+
+	  } catch (error) {
+		  return;
+	  }
   });
   
   $('[href="'+ hash +'"]').trigger('click');
